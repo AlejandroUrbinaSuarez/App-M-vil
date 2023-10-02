@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TurismoApp</string>
+    <string name="txtusuario">Digite el Usuario</string>
+    <string name="txtclave">Digite la Clave</string>
+    <string name="btniniciar">Inicio</string>
+    <string name="txtnousuario">"No tiene usuario, "</string>
+    <string name="txtcrearusuario">Cree uno aquí</string>
+    <string name="txtperdioclave">"Perdió la clave, "</string>
+    <string name="txtrecuperarclave">recupérela aquí.</string>
+    <string name="btnregistrar">Registrar</string>
+</resources>
