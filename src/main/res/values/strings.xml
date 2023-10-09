@@ -8,4 +8,14 @@
     <string name="txtperdioclave">"Perdió la clave, "</string>
     <string name="txtrecuperarclave">recupérela aquí.</string>
     <string name="btnregistrar">Registrar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="titulositioturistico">Complejo Histórico</string>
+    <string name="descripcionsitioturistico">Este complejo histórico, declarado Bien de Interés Cultural de carácter Nacional, está ubicado a 10 minutos de Cúcuta. Es reconocido porque allí nació la patria de la Gran Colombia. Allí se encuentra el parque Grancolombiano, la casa natal de Francisco de Paula Santander, el templo de Villa del Rosario (destruido también en el terremoto de 1875) y la casa de Gobierno, conocida también como la Bagatela.</string>
+    <string name="localizar">Localizar</string>
+    <string name="favoritos">Favorito</string>
+    <string name="txtsitios">Sitios Turísticos</string>
+    <string name="txtmissitios">Mis Sitios</string>
+    <string name="txtmiperfil">Mi Perfil</string>
+    <string name="txtturismoapp">Turismo App</string>
 </resources>

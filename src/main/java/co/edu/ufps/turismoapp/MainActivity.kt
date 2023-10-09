@@ -7,6 +7,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import co.edu.ufps.turismoapp.vista.Contenedor
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -17,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var usuario: TextInputEditText
     lateinit var clave: TextInputEditText
     lateinit var inicio: Button
-    lateinit var CrearUsuario: TextView
+    lateinit var crearUsuario: TextView
 
     private lateinit var auth: FirebaseAuth;
     var TAG :String = "MainActivity"
@@ -32,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         inicio.setOnClickListener{
             signIn(usuario.text.toString(), clave.text.toString())
         }
-        crarusuario.setOnClickListener{
+        crearUsuario.setOnClickListener{
             registrar()
         }
     }
@@ -55,7 +56,8 @@ class MainActivity : AppCompatActivity() {
                         "Authentication succesfully.",
                         Toast.LENGTH_SHORT,
                     ).show()
-                    val user = auth.currentUser
+                    irInicio()
+                    //val user = auth.currentUser
                     //updateUI(user)
                 } else {
                     // If sign in fails, display a message to the user.
@@ -71,7 +73,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun registrar (){
-        val intent = Intent(this.RegistrarUsuario::class.java)
+        val intent = Intent(this,RegistrarUsuario::class.java)
+        startActivity(intent)
+    }
+
+    fun irInicio (){
+        val intent = Intent(this,Contenedor::class.java)
         startActivity(intent)
     }
 }
